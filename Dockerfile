@@ -12,3 +12,10 @@ WORKDIR  /home/mcneilwsu/s24cicd-cmcneil6/website
 
 
 
+<<<<<<< HEAD
+
+FROM httpd:2.4
+ 
+COPY index.html /home/mcneilwsu/s24cicd-cmcneil6/website/
+=======
+>>>>>>> 9fedd0ead2420a61a0f88d8c5566eceadccc7f4b
