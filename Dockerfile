@@ -10,3 +10,5 @@ WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/website
 #    to container working directory (recall WORKDIR)
 COPY . .
 
+
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
