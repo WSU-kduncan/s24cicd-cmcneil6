@@ -13,5 +13,5 @@ COPY . .
 
 FROM nginx
 RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
-COPY index.html /website
+COPY . . 
 COPY conf /etc/nginx
