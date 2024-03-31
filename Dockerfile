@@ -2,7 +2,7 @@
 FROM httpd:2.4
 
 # set a directory for the app within container
-WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/test
+WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/website
 
 
 # copy all the files to the container
