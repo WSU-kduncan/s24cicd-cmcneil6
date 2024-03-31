@@ -1,5 +1,4 @@
 
 FROM httpd:latest
-WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/website
 
-COPY . .
+COPY ./public-html/ /usr/local/apache2/htdocs/
