@@ -1,5 +1,5 @@
 # Specify base image
-FROM httpd:latest
+FROM nginx
 
 # set a directory for the app within container
 WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/website
