@@ -1,5 +1,5 @@
 # Specify base image
-FROM httpd:2.4
+FROM nginx
 
 # set a directory for the app within container
 WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/website
@@ -11,6 +11,3 @@ WORKDIR /home/mcneilwsu/s24cicd-cmcneil6/website
 COPY . .
 
 
-FROM nginx
-RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
-COPY . . 
