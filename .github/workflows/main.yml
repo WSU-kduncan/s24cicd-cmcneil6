@@ -16,8 +16,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: |
-            mcneil6/proj5
+          images: ${{ secrets.DOCKER_USERNAME }}/sp2024-ceg3120-proj
           tags: |
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
