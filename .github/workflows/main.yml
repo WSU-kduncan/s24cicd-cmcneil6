@@ -17,8 +17,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            name/app
-            ghcr.io/username/app            
+            mcneil6/proj5
           tags: |
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
