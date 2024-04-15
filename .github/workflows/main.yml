@@ -16,7 +16,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/cmcneil6-proj5
+          images: ${{ secrets.DOCKER_USERNAME }}/proj5
           tags: |
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
