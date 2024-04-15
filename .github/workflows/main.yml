@@ -1,16 +1,8 @@
-name: ci
-
 on:
-  schedule:
-    - cron: "0 10 * * *"
   push:
     branches:
-      - "**"
-    tags:
-      - "v*.*.*"
-  pull_request:
-    branches:
       - "main"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,5 +26,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/proj4:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/proj4:test
          
