@@ -1,37 +1,25 @@
-# Project Overview
+## Semantic Versioning 
 
-- what is the point of this project and what tools are used
-- Part 4 - Diagramming goes here
-  - Include a diagram (or diagrams) of your entire workflow. Meaning it should start with a project change / update, the steps that happen in between, and end with the updated version when the server is queried (web page is accessed)
-
-# Run Project Locally
-
-- how you installed docker + dependencies (WSL2, for example)
-- how to build the container
-- how to run the container
-- how to view the project running in the container (open a browser...go to ip and port...)
-
-# DockerHub
-
-- Process to create public repo in DockerHub
-- How to authenticate with DockerHub via CLI using Dockerhub credentials
-  - what credentials would you recommend providing?
-- How to push container to Dockerhub
-
-# GitHub Actions
-
-- Configuring GitHub Secrets
-  - What secrets were set based on what info
+- CD Project Overview
+  - deploying webhooks on an instance, using github and dockerhub. 
+- git tag v1.0.0
 - Behavior of GitHub workflow
-  - what does it do and when
-  - what variables in workflow are custom to your project
+  -  when ran it pushes images to the dockerhub repository 
+- [Dockerhub](https://hub.docker.com/repository/docker/mcneil6/proj5/general)
 
-# Deployment
+## Deployment
 
-- Description of container restart script
-- Setting up a webhook on the server
-  - How you created you own listener
-  - How you installed the [webhook on GitHub](https://github.com/adnanh/webhook)
-  - How to keep the webhook running if the instance is on
-- Description of Webhook task definition file
-- Steps to set up a notifier in GitHub or DockerHub
+- Docker was installed using this link as reference [Docker](https://docs.docker.com/engine/install/ubuntu/)
+- Container restart script
+  - The script pulls a new image and then run and restarts the image
+  - The file should be located where it can be accessed by the system.
+- Setting up a `webhook` on the server
+  -  sudo apt-get install webhook
+  -  webhook -hooks file.name -verbose
+- `webhook` task definition file
+  - The webhook task file is used to set hooks and what commands they run when activated along side what the dir is
+  - The file should be in the home DIR
+- github settings -> webhooks -> create webhook -> add webhook address -> run on push/github workflows.
+
+## Diagram
+- ![](/images/Capture2.PNG)

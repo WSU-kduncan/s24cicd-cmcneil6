@@ -1,0 +1,9 @@
+[
+    {
+      "id": "restart",
+      "execute-command": "/home/ubuntu/pullrestart.sh",
+      "command-working-directory": "/home/ubuntu"
+    }
+  ]
+  
+  
